@@ -1,5 +1,3 @@
-package f;
-
 import java.util.Scanner;
 
 public class TicTacToeLogic
@@ -97,14 +95,4 @@ public class TicTacToeLogic
         return null;
     }
 
-    /*public static void main(String[] args)
-    {
-        TicTacToe ttt = new TicTacToe();
-        if(ttt.isSolved())
-        {
-            System.out.println( "the winner is " +ttt.getWinner());  // X
-        }
-        else 
-        	System.out.println("Crosses");
- }*/
 }
