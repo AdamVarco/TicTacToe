@@ -1,5 +1,3 @@
-package f;
-
 import java.util.Scanner;
 
 public class TicTacToeMain {
