@@ -45,8 +45,9 @@ public class TicTacToeMain {
     }
 
     public TicTacToeMain() {
+    	//TicTacToeLogic ttt = new TicTacToeLogic();
     	TicTacToeLogic ttt = new TicTacToeLogic();
-    	printBoard(board);
+    	//printBoard(board);
     	int v, h;
     	//every loop goes through each time that you could get a space that's occupied
     	boolean loop1 = true;
@@ -58,6 +59,8 @@ public class TicTacToeMain {
     	boolean loop7 = true;
     	boolean loop8 = true;
     	
+     
+        printBoard(board);
     	Scanner scan = new Scanner(System.in);
         System.out.println("X vertical");
         v = scan.nextInt();
@@ -118,8 +121,8 @@ public class TicTacToeMain {
 		}
 	    
 	    
-	    ttt.fillBoard(board);
-        if(ttt.isSolved())
+	   
+        if(ttt.isSolved(board))
         {
             System.out.println( "the winner is " +ttt.getWinner());  // X
         }
@@ -137,9 +140,9 @@ public class TicTacToeMain {
             
     		printBoard(board);
         	}
-    		ttt.fillBoard(board);
+    		
         	
-    		if(ttt.isSolved())
+    		if(ttt.isSolved(board))
             {
                 System.out.println( "the winner is " +ttt.getWinner());  // X
             }
@@ -156,8 +159,7 @@ public class TicTacToeMain {
     		          loop6 = false;
     		    printBoard(board);
     			}
-    		    ttt.fillBoard(board);
-    		    if(ttt.isSolved())
+    		    if(ttt.isSolved(board))
                 {
                     System.out.println( "the winner is " +ttt.getWinner());  // X
                 }
@@ -174,8 +176,8 @@ public class TicTacToeMain {
     	  	          loop7 = false;
     	    		printBoard(board);
     		    	}
-    	    		ttt.fillBoard(board);
-    	    		if(ttt.isSolved())
+    	    	
+    	    		if(ttt.isSolved(board))
                     {
                         System.out.println( "the winner is " +ttt.getWinner());  // X
                     }
@@ -192,8 +194,7 @@ public class TicTacToeMain {
     	    		          loop8 = false;
     	    		    printBoard(board);
     	    			}
-    	    		    ttt.fillBoard(board);
-    	    		    if(ttt.isSolved())
+    	    		    if(ttt.isSolved(board))
     	                {
     	                    System.out.println( "the winner is " +ttt.getWinner());  // X
     	                }
@@ -205,6 +206,6 @@ public class TicTacToeMain {
     		}
         	
         }
-
+        
      }
-}
+   
